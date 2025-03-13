@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Sử dụng CSS Grid để đặt Footer ở cuối trang */
+.app-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header - Main (co giãn) - Footer */
+    min-height: 100vh;
+  }
+  

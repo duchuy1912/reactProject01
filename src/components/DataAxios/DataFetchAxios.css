@@ -1,0 +1,58 @@
+/* Ensure the parent takes full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the content */
+.container {
+  display: flex;
+  flex-direction: column;  /* Để xếp h1, select, và các phần tử khác theo chiều dọc */
+  justify-content: center;  /* Canh giữa theo chiều dọc */
+  align-items: center;      /* Canh giữa theo chiều ngang */
+  height: 100vh;            /* Đảm bảo toàn bộ viewport được sử dụng */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style for select dropdown */
+select {
+  font-size: 1rem;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  background-color: #e9f4fb;
+  border-color: #007bff;
+}
+
+option {
+  padding: 10px;
+}
+
+/* Style for error or loading messages */
+div.error, div.loading {
+  font-size: 1.2rem;
+  margin-top: 20px;  /* Thêm khoảng cách từ select xuống */
+}
+
+div.error {
+  color: #ff6347;  /* Màu đỏ cho lỗi */
+}
+
+div.loading {
+  color: #f39c12;  /* Màu vàng cho loading */
+}
